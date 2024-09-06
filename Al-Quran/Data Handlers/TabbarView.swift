@@ -27,6 +27,11 @@ struct TabbarView: View {
                             .renderingMode(.template)
                     }
                     .tag(0)
+                SalahView()
+                    .tabItem {
+                        Image(ImageEnum.icSalah.rawValue)
+                            .renderingMode(.template)
+                    }
                 Text("Profile view")
                     .navigationTitle("Profile")
                     .tabItem {

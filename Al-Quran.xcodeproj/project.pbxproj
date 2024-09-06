@@ -58,6 +58,10 @@
 		09F77C482C87B7AD003714C5 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F77C472C87B7AD003714C5 /* NameView.swift */; };
 		09F77C4B2C87B8F6003714C5 /* CustomNameTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F77C4A2C87B8F6003714C5 /* CustomNameTextfield.swift */; };
 		09F77C4D2C87D6B8003714C5 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F77C4C2C87D6B8003714C5 /* AudioManager.swift */; };
+		09F7FA9E2C8B21380042CD22 /* SalahView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F7FA9D2C8B21380042CD22 /* SalahView.swift */; };
+		09F7FAA12C8B2BD40042CD22 /* SalahResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F7FAA02C8B2BD40042CD22 /* SalahResponseModel.swift */; };
+		09F7FAA42C8B34F10042CD22 /* SalahVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F7FAA32C8B34F10042CD22 /* SalahVM.swift */; };
+		09F7FAA72C8B38390042CD22 /* CustomSalahTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F7FAA62C8B38390042CD22 /* CustomSalahTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +117,10 @@
 		09F77C472C87B7AD003714C5 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
 		09F77C4A2C87B8F6003714C5 /* CustomNameTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNameTextfield.swift; sourceTree = "<group>"; };
 		09F77C4C2C87D6B8003714C5 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		09F7FA9D2C8B21380042CD22 /* SalahView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalahView.swift; sourceTree = "<group>"; };
+		09F7FAA02C8B2BD40042CD22 /* SalahResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalahResponseModel.swift; sourceTree = "<group>"; };
+		09F7FAA32C8B34F10042CD22 /* SalahVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalahVM.swift; sourceTree = "<group>"; };
+		09F7FAA62C8B38390042CD22 /* CustomSalahTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSalahTime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +181,7 @@
 		094C383E2C834BCE00B3E452 /* Data Handlers */ = {
 			isa = PBXGroup;
 			children = (
+				09F7FA9B2C8B21230042CD22 /* Salah */,
 				09F77C462C87B7A1003714C5 /* Name */,
 				09F77C432C875424003714C5 /* SideBar */,
 				097E04102C86135F0015AF23 /* Sign In */,
@@ -235,6 +244,7 @@
 		094C385A2C835E7600B3E452 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				09F7FAA52C8B38290042CD22 /* Salah */,
 				09F77C492C87B8EA003714C5 /* Name */,
 				097E04012C8602520015AF23 /* Register */,
 				094C38922C84CB7B00B3E452 /* Surah Detail */,
@@ -457,6 +467,48 @@
 			path = Name;
 			sourceTree = "<group>";
 		};
+		09F7FA9B2C8B21230042CD22 /* Salah */ = {
+			isa = PBXGroup;
+			children = (
+				09F7FAA22C8B34E40042CD22 /* ViewModel */,
+				09F7FA9F2C8B2B910042CD22 /* Models */,
+				09F7FA9C2C8B21280042CD22 /* Views */,
+			);
+			path = Salah;
+			sourceTree = "<group>";
+		};
+		09F7FA9C2C8B21280042CD22 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				09F7FA9D2C8B21380042CD22 /* SalahView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		09F7FA9F2C8B2B910042CD22 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				09F7FAA02C8B2BD40042CD22 /* SalahResponseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		09F7FAA22C8B34E40042CD22 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				09F7FAA32C8B34F10042CD22 /* SalahVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		09F7FAA52C8B38290042CD22 /* Salah */ = {
+			isa = PBXGroup;
+			children = (
+				09F7FAA62C8B38390042CD22 /* CustomSalahTime.swift */,
+			);
+			path = Salah;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -546,6 +598,7 @@
 				094C38652C83620E00B3E452 /* CustomEmailTextField.swift in Sources */,
 				094C38592C835D3900B3E452 /* SignInView.swift in Sources */,
 				094C389B2C85059F00B3E452 /* SurahDetailResponseModel.swift in Sources */,
+				09F7FAA42C8B34F10042CD22 /* SalahVM.swift in Sources */,
 				097E04082C8605970015AF23 /* PhoneView.swift in Sources */,
 				094C38892C83D1DC00B3E452 /* HomeVM.swift in Sources */,
 				094C38752C83A95000B3E452 /* CustomHomeTab.swift in Sources */,
@@ -555,8 +608,10 @@
 				094C38332C834B8A00B3E452 /* Item.swift in Sources */,
 				094C385F2C835ED300B3E452 /* CustomTopBackView.swift in Sources */,
 				094C386B2C836D3700B3E452 /* Sting+Ext.swift in Sources */,
+				09F7FAA12C8B2BD40042CD22 /* SalahResponseModel.swift in Sources */,
 				095D36892C85E8FF00AC61C9 /* RegisterView.swift in Sources */,
 				094C38402C834BDA00B3E452 /* BoardingView.swift in Sources */,
+				09F7FA9E2C8B21380042CD22 /* SalahView.swift in Sources */,
 				094C38542C8350F800B3E452 /* StringConstants.swift in Sources */,
 				094C38912C848DE300B3E452 /* SurahDetailsView.swift in Sources */,
 				094C38692C836AAD00B3E452 /* CustomLoginButton.swift in Sources */,
@@ -573,6 +628,7 @@
 				094C38722C83783400B3E452 /* HomeView.swift in Sources */,
 				094C38502C834D2D00B3E452 /* ColorEnum.swift in Sources */,
 				094C385D2C835E8F00B3E452 /* CustomBackButton.swift in Sources */,
+				09F7FAA72C8B38390042CD22 /* CustomSalahTime.swift in Sources */,
 				094C38942C84CB8A00B3E452 /* CustomSurahDetailView.swift in Sources */,
 				094C38872C83C8DD00B3E452 /* SurahResponseModel.swift in Sources */,
 				09F77C4D2C87D6B8003714C5 /* AudioManager.swift in Sources */,

@@ -30,4 +30,5 @@ enum ImageEnum: String {
     case icSurahBookmark = "ic_surah_bookmark"
     case icPlay = "ic_play"
     case icPause = "ic_pause"
+    case icSalah = "ic_salah"
 }
